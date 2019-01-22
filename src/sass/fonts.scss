@@ -1,0 +1,16 @@
+$font_path: resolve('@fonts/fonts/');
+//$font_path: '~assets/fonts/';
+
+@font-face {
+	font-family: "Raleway Regular";
+	src: url($font_path +'Raleway-Regular.ttf');
+	font-style: normal;
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: "Raleway Black";
+	src: url($font_path +'Raleway-Black.ttf');
+	font-style: normal;
+	font-weight: 400;
+}

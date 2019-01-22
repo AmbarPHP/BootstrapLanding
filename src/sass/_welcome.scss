@@ -1,0 +1,32 @@
+@import "./masthead.scss";
+@import "./variables";
+#Welcome {
+	display: block;
+	font-family: $font_relaway;
+	margin-top: 1em;
+	height: auto;
+
+	h1 {
+		font-weight: normal;
+		font-size: 58px;
+		font-weight: bold;
+		color: #fff;
+	}
+
+	h3 {
+		font-weight: normal;
+		font-size: 28px;
+		font-weight: bold;
+		color: #fff;
+	}
+	p {
+		color: #fff;
+		font-size: 1.5rem;
+		a {
+			color: $color-resaltado;
+		}
+		.jumbotron {
+			background-color: $color-complementario;
+		}
+	}
+}

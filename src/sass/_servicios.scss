@@ -1,0 +1,38 @@
+#Servicios {
+	font-family: $font_relaway;
+	margin-top: 1vh;
+	//padding: 15vh;
+	height: auto;
+	//position: relative;
+
+	h1 {
+		font-weight: 400;
+		font-size: 2rem;
+		font-weight: bold;
+		color: $color-resaltado;
+		padding-bottom: 5vh;
+		padding-top: 5vh;
+		font-family: $font_relaway;
+	}
+	h2 {
+		padding-top: 3vh;
+		font-size: 1.5rem;
+		font-weight: bold;
+		color: $color-complementario;
+	}
+	p {
+		color: $color-complementario;
+		a {
+			color: $color-resaltado;
+		}
+	}
+
+	.actualizaciones {
+		background-color: #891e67;
+		h1,
+		h2,
+		p {
+			color: #fff;
+		}
+	}
+}

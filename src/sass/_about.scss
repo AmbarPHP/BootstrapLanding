@@ -1,0 +1,41 @@
+#About {
+	font-family: $font;
+	margin-top: 1em; //alinear base line for section
+	background-color: #fff; // rgba(245, 236, 236, 0.555);
+	padding: 15vh;
+	height: auto;
+
+	h1 {
+		font-size: 2rem;
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		color: $color-resaltado;
+		padding-bottom: 5vh;
+
+		font-family: $font_relaway;
+	}
+
+	span {
+		display: block;
+		margin-top: 10px;
+		font-weight: 300;
+		color: #777;
+		font-size: 1.5rem;
+	}
+
+	h2 {
+		font-size: 1.5rem;
+		font-weight: bold;
+		color: $color-complementario;
+	}
+
+	a,
+	p,
+	li {
+		color: $color-complementario;
+		font-size: 1rem;
+		border: $color-resaltado;
+		padding-left: 20px;
+	}
+}
