@@ -27,11 +27,21 @@
 		}
 	}
 
-	.actualizaciones {
+	#Baner {
 		background-color: #891e67;
+		margin: -15px;
+		.pb-80 {
+			padding-bottom: 80px;
+		}
+
+		.pt-80 {
+			padding-top: 80px;
+		}
 		h1,
-		h2,
-		p {
+		h3,
+		span,
+		p,
+		i {
 			color: #fff;
 		}
 	}

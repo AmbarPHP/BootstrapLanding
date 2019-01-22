@@ -1,0 +1,19 @@
+#Footer {
+	ul {
+		list-style-type: none;
+		padding: 0;
+	}
+	li {
+		display: inline-block;
+		margin: 0 10px;
+	}
+	li:hover {
+		display: inline-block;
+		margin: 0 10px;
+		color: chocolate;
+	}
+	a,
+	p {
+		color: #fff; //#42b983;
+	}
+}
