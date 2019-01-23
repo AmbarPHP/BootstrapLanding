@@ -1,40 +1,13 @@
 #ContactUs {
-	display: inline-block;
-	font-family: $font;
-	margin-top: 0vh;
-	//padding: 5vh;
-	//height: 100vh;
+	font-family: "font-family: 'Raleway', sans-serif;";
+	margin-top: 1vh;
+	height: auto;
+	width: auto; //70vh;
+	position: relative;
 	background-color: $color-complementario;
 	color: $color-complementario;
-	width: 100%; // trate de darle un ancho de el view port
+	// trate de darle un ancho de el view port
 
-	h1 {
-		font-weight: 400;
-		font-size: 2rem;
-		font-weight: bold;
-		color: #fff;
-		padding-top: 5vh;
-		font-family: $font_relaway;
-	}
-	h2 {
-		font-size: 1.5rem;
-		font-weight: bold;
-		color: $color-complementario;
-	}
-	.title {
-		font-weight: 400;
-		font-size: 18px;
-		font-weight: bold;
-		color: #fff;
-		padding-bottom: 0vh;
-		font-family: $font_relaway;
-	}
-	a,
-	p {
-		font-size: 18px;
-		font-weight: bold;
-		color: #fff;
-	}
 	.white-box {
 		//background-color: #fff;
 		a,
@@ -44,20 +17,6 @@
 			color: $color-complementario;
 			background: #891e67;
 		}
-	}
-
-	.card {
-		position: relative;
-		display: flex;
-		flex-direction: column;
-		min-width: 0;
-		word-wrap: break-word;
-		background-color: #fff;
-		background-clip: border-box;
-		border: 1px solid rgba(0, 0, 0, 0.125);
-		border-radius: 0.25rem;
-		width: auto;
-		margin: auto;
 	}
 
 	//--------------------inner sections
@@ -70,10 +29,8 @@
 	}
 	#SocialMedia {
 		a,
-		p {
-			font-size: 18px;
-			font-weight: bold;
-			color: #fff;
+		i {
+			color: #fff; //solo color a los iconos
 		}
 	}
 
@@ -95,7 +52,56 @@
 			border-color: #f8f9fa;
 		}
 	}
+}
+
+/* If the screen size is 468px and down */
+@media only screen and (max-width: 480px) {
+	// #WriteUs {
+	// 	padding-left: 15vh;
+	// 	width: 100%;
+	// }
+	[class*="col-"] {
+		width: 100%;
+	}
 
 	#WriteUs {
+		padding-left: 10vh;
+		width: 100%;
+		.card {
+			position: relative;
+			display: flex;
+			flex-direction: column;
+			min-width: 0;
+			word-wrap: break-word;
+			background-color: #fff;
+			background-clip: border-box;
+			border: 1px solid rgba(0, 0, 0, 0.125);
+			border-radius: 0.25rem;
+			width: 170%;
+		}
 	}
+}
+
+/* Laptop devices 992 and up*/
+@media only screen and (min-width: 992px) {
+	#WriteUs {
+		padding-left: 1vh;
+		width: 100%;
+		.card {
+			position: relative;
+			display: flex;
+			flex-direction: column;
+			min-width: 0;
+			word-wrap: break-word;
+			background-color: #fff;
+			background-clip: border-box;
+			border: 1px solid rgba(0, 0, 0, 0.125);
+			border-radius: 0.25rem;
+			width: 170%;
+		}
+	}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
 }

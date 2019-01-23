@@ -79,7 +79,7 @@
 <section id="Gallery">
    
    
-    <div class="container-fluid p-0">
+    <div class="container-fluid no-padding">
         <div class="col-md-12 py-4">
             <div class="col-md-12 py-4">
                 <h1 class="text-center">GALERIA DE PRODUCTOS</h1>
@@ -158,7 +158,7 @@
 <!-- Servicios -->
 <section id="Servicios">
     
-    <div class="container-fluid">
+    <div class="container-fluid no-padding">
         <div class="col-md-12 py-4">
             <h1 class="text-center">NUESTROS SERVICIOS</h1>
         </div>
@@ -283,14 +283,14 @@
 </section>
 <!-- About -->
 <section id="About">
-    <div class="container-fluid">
+    <div class="container-fluid no-padding">
         <div class="row">
             <div class="col-md-12 py-4">
                 <h1 class="text-center">QUIENES SOMOS</h1>
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-6 col-md-12 text-center">
+            <div class="col-lg-6 col-md-6 col-sm-12 text-center">
                 <div class="blockquote">
                     <span>
                         "Constantemente estamos creciendo, somos una gran compañia"
@@ -306,7 +306,7 @@
                     </p>
                     <p>Con 3 naves, 20x60 cada una cuenta con:</p>
                     <p>Empacadora cuenta con las siguientes areas:</p>
-                    <ul>
+                    <!-- <ul>
                         <li>Recepcion</li>
                         <li>Area de prueba fitosanitaria de Fruta</li>
                         <li>Area de lavado y preseleccion</li>
@@ -316,16 +316,17 @@
                         <li>Area de conservacion y refrigeracion</li>
                         <li>Area de maquinaria para caja de carton</li>
                         <li>Area de embalajes</li>
-                    </ul>
-                    <p>
-                        Nuestros clientes son Frutera frog, Robison Fresh
-                        Actualmente tenemos la capacidad de produccion:3 cargas al dia
-                        Nuestra Meta es :""
-                    </p>
+                    </ul> -->
+                    
                 </div>
+              
             </div>
-            <div class="col-lg-6 text-center col-md-12">
-                <Video></Video>
+            <div class="col-lg-6 col-md-6 col-sm-12 px-0  ">
+            <iframe width="660" height="550" src="https://www.youtube.com/embed/TF9MctIpWBA" 
+            frameborder="0"
+            marginwidth="0" marginheight="0" 
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
             </div>
         </div>
         
@@ -333,99 +334,76 @@
     <Clientes></Clientes>
     <Team></Team>
 </section>
+
+
 <!-- ContactUs -->
 <section id="ContactUs">
+    <div class="container-fluid no-padding">
     <div class="row">
         <!-- Header -->
-        <div class="col-lg-12 col-md-12 pl-5 col-sm-12 align-items-center">
+        <div class="col-lg-12 col-md-12 col-sm-12 text-center">
             <h1 class="tittle-footer">ENVIANOS UN MENSAJE</h1>
             <p>Tienes un proyecto en el que quieres que trabajemos en conjunto o quisas algunas preguntas</p>
             <p>contactanos y te atenderemos con la mejor disposicion</p>
         </div>
         <div class="w-100"></div>
         <!-- Grid column Maps-->
-        <div class="col-lg-5 col-md-5 col-sm-12 pl-5 text-center">
+        <div class="col-lg-5 col-md-12 col-sm-12 text-center">
         <section id="Maps">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14847.877980776071!2d-104.90133423438347!3d21.508914770722182!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x84273702c0e631ab%3A0xf8dd9a85cd205254!2sCentro%2C+Tepic%2C+Nay.!5e0!3m2!1ses-419!2smx!4v1547836123481"
                 width="400" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
         </section>
         </div>
 
-        <!-- Grid column social-->
-        <div class="col-lg-3 col-md-3 col-sm-12 justify-content-center">
+        <!-- Grid column address & social-->
+        <div class="col-lg-3 col-md-12 col-sm-12 text-center">
             <div class="row">
-                <div class="col-md-12 d-flex justify-content-center">
+                <div class="col-md-12 text-center">
                     <section id="Adress">
-                        <!-- <div class="row">
-                          <div class="col-md-4">
-                            <a class="btn-floating blue accent-1">
-                              <font-awesome-icon icon="map-market-alt"/>
-                              <font-awesome-icon size="3x" :icon="{ prefix: 'fab', iconName: 'map-marker-alt' }"/>
-                            </a>
-                            <p class="title">Direccion:</p>
-                            <p>Productora Agricola Yarexi SPR DE RL</p>
-                            <p>Puebla Norte no 356</p>
-                          </div>
-                          <div class="col-md-4">
-                            <a class="btn-floating blue accent-1">
-                              <font-awesome-icon icon="phone"/>
-                            </a>
-                            <p class="title">Telefono:</p>
-                            <p>(951) 236-4677</p>
-                          </div>
-                          <div class="col-md-4">
-                            <a class="btn-floating blue accent-1">
-                              <font-awesome-icon icon="envelope"/>
-                            </a>
-                            <p class="title">Correo:</p>
-                            <p>agricola_yarexi@hotmail.com</p>
-                            <p>Proebapack@hotmail.com</p>
-                          </div>
-                        </div>-->
+                   
                         <div class="row">
-                            <div class="col-md-12">
-                                <a class="btn-floating blue accent-1">
-                                    <font-awesome-icon icon="phone" /> Llamar ahora
-                                </a>
-                                </br>
+                            <div class="col-md-12 text-center">
+                                
                                 <!-- <p class="title">Telefono:</p> -->
-                                <a class="btn btn-light" href="tel://3315001231">(951) 236-4677</a>
-                                <!-- <p class="strong">(951) 236-4677</p> -->
-                                <a class="btn-floating blue accent-1">
-                                    <font-awesome-icon icon="map-market-alt" />
-                                    <font-awesome-icon size="3x" :icon="{ prefix: 'fab', iconName: 'map-marker-alt' }" />
-                                </a>
-                                <!-- <p class="title">Direccion:</p> -->
+                                <a class="btn btn-light" href="tel://3315001231"><i class="fas fa-phone fa-1x"></i> Llamar (951) 236-4677</a>
                                 <hr>
+                                <a href="https://www.google.com/maps">
+                                    <i class="fas fa-map-marker-alt fa-1x"></i>
+                                </a>
                                 <p>Productora Agricola Yarexi SPR DE RL:</p>
-                                <p>Puebla Norte no 356</p>
+                                <p>Puebla Norte no 356, Tepic Nayarit </p>
                                 <hr>
-                                <a class="btn-floating blue accent-1">
-                                    <font-awesome-icon icon="envelope" />
-                                </a>
+                                <i class="fas fa-envelope"></i> Escribenos:
+                                
                                 <!-- <p class="title">Correo:</p> -->
                                 <p>agricola_yarexi@hotmail.com</p>
                                 <p>Proebapack@hotmail.com</p>
+                            
                             </div>
                         </div>
                     </section>
                 </div>
-                <div class="col-md-12 d-flex md-ml-6 justify-content-center">
+                <div class="col-md-12 text-center">
                     <section id="SocialMedia">
-                        <div class="row">
-                            <div class="col">
-                                <a class="mb-1 fa-lg" href="https://www.facebook.com/PRODUCTORAAGRICOLAYAREXISPRDERL/">
-                                    <i class="fab fa-facebook-square fa-2x"></i>
+                        <div class="row  text-center">
+                            <div class="col-md-3 col-sm-3">
+                                <a class="mb-1" href="https://www.facebook.com/PRODUCTORAAGRICOLAYAREXISPRDERL/">
+                                    <i class="fab fa-facebook-square fa-3x"></i>
                                 </a>
                             </div>
-                            <div class="col">
-                                <a class="mb-1 fa-lg">
-                                    <i class="fab fa-instagram fa-2x"></i>
+                            <div class="col-md-3 col-sm-3">
+                                <a class="my-1 ">
+                                    <i class="fab fa-instagram fa-3x"></i>
                                 </a>
                             </div>
-                            <div class="col">
-                                <a class="mb-1 fa-lg">
-                                    <i class="fab fa-whatsapp fa-2x"></i>
+                            <div class="col-md-3 col-sm-3">
+                                <a class="my-1 ">
+                                    <i class="fab fa-whatsapp fa-3x"></i>
+                                </a>
+                            </div>
+                            <div class="col-md-3 col-sm-3">
+                                <a class="my-1">
+                                    <i class="fas fa-sms fa-3x"></i>
                                 </a>
                             </div>
                         </div>
@@ -434,7 +412,7 @@
             </div>
         </div>
         <!-- Grid writeUs-->
-        <div class="  text-center mx-auto">
+        <div class="  text-center ">
             <!-- <p class="title">Escribenos:</p> -->
         <section id="WriteUs">
             <!-- Form with header -->
@@ -442,34 +420,34 @@
                 <div class="card-body">
                     <!-- Header -->
                     <div class="form-header blue accent-1">
-                        <h3 class="mt-2">
+                        <h3 class="mt-0">
                             <i class="fas fa-envelope"></i> Escribenos:
                         </h3>
                     </div>
                     <p class="dark-grey-text">Dejanos un mensaje aqui</p>
                     <!-- Body -->
                     <div class="md-form">
-                        <i class="fas fa-user prefix grey-text"></i>
+                        <!-- <i class="fas fa-user prefix grey-text"></i> -->
                         <input type="text" id="form-name" class="form-control">
                         <label for="form-name">Nombre</label>
                     </div>
                     <div class="md-form">
-                        <i class="fas fa-envelope prefix grey-text"></i>
+                        <!-- <i class="fas fa-envelope prefix grey-text"></i> -->
                         <input type="text" id="form-email" class="form-control">
                         <label for="form-email">Correo</label>
                     </div>
                     <div class="md-form">
-                        <i class="fas fa-tag prefix grey-text"></i>
+                        <!-- <i class="fas fa-tag prefix grey-text"></i> -->
                         <input type="text" id="form-Subject" class="form-control">
                         <label for="form-Subject">Acerca de</label>
                     </div>
                     <div class="md-form">
-                        <i class="fas fa-pencil prefix grey-text"></i>
+                        <!-- <i class="fas fa-pencil prefix grey-text"></i> -->
                         <textarea type="text" id="form-text" class="form-control md-textarea" rows="3"></textarea>
-                        <label for="form-text">Proeba</label>
+                        <label for="form-text">escribenos sobre tus planes</label>
                     </div>
                     <div class="text-center">
-                        <button class="btn">Enviar</button>
+                        <button class="btn-light">Enviar</button>
                     </div>
                 </div>
             </div>
@@ -477,8 +455,8 @@
         </section>
         </div>
     </div>
-
     <Footer></Footer>
+    </div>
 </section>
 <section id="Footer">
     <div class="row">

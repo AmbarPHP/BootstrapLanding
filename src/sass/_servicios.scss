@@ -1,9 +1,10 @@
 #Servicios {
 	font-family: $font_relaway;
+	//display: block;
 	margin-top: 1vh;
 	//padding: 15vh;
 	height: auto;
-	//position: relative;
+	position: relative;
 
 	h1 {
 		font-weight: 400;
@@ -29,7 +30,7 @@
 
 	#Baner {
 		background-color: #891e67;
-		margin: -15px;
+		//margin: -15px;
 		.pb-80 {
 			padding-bottom: 80px;
 		}
