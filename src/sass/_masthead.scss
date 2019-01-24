@@ -1,6 +1,5 @@
 // Styling for the masthead
 header.masthead {
-	// $theme-primary: #fdcc52;
 	$theme-secondary: hsl(324, 50%, 48%);
 	$theme-tertiary: #891e67;
 
@@ -30,7 +29,7 @@ header.masthead {
 		}
 	}
 	@media (min-width: 992px) {
-		height: 80vh;
+		height: 100vh;
 		//min-height: 775px;
 		padding-top: 0;
 		padding-bottom: 0;

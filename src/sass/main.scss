@@ -11,20 +11,14 @@
 @import "footer";
 
 body {
-	background: #777;
-	font-family: "Poppins", sans-serif;
-	font-size: 2rem;
-	font-weight: 300;
-	line-height: 1.625em;
-	position: relative;
+	background: #eee;
+	width: 100%;
 
-	@media screen and (min-width: 768px) and (min-aspect-ratio: 16/9) {
-		container-fluid {
-			max-height: 80vh;
-			height: 56.25vw;
-			min-height: 400px;
-			overflow: hidden;
-		}
+	.container-fluid {
+		width: 100%;
+		height: 100%;
+		padding: 0%;
+		margin: 0px;
 	}
 
 	section {
