@@ -8,6 +8,7 @@ const webpack = require("webpack");
 const path = require("path");
 const globSync = require("glob").sync;
 
+
 module.exports = (env, options) => ({
   entry: ["./src/index.js"],
   devServer: {
@@ -18,16 +19,15 @@ module.exports = (env, options) => ({
     fs: 'empty'
   },
   module: {
-    rules: [
-      {
+    rules: [{
         test: /\.scss$/,
         use: [
-          options.mode !== "production"
-            ? "style-loader"
-            : MiniCssExtractPlugin.loader,
+          options.mode !== "production" ?
+          "style-loader" :
+          MiniCssExtractPlugin.loader,
           "css-loader",
           {
-            loader: 'postcss-loader', 
+            loader: 'postcss-loader',
             options: {
               plugins: function () {
                 return [
@@ -42,15 +42,13 @@ module.exports = (env, options) => ({
       },
       {
         test: /\.(png|jpg|gif|svg)$/,
-        use: [
-          {
-            loader: "file-loader",
-            options: {
-              name: "[name].[ext]",
-              outputPath: "img/"
-            }
+        use: [{
+          loader: "file-loader",
+          options: {
+            name: "[name].[ext]",
+            outputPath: "img/"
           }
-        ]
+        }]
       },
       {
         test: /\.(html)$/,
@@ -96,16 +94,16 @@ module.exports = (env, options) => ({
   ],
   optimization: {
     minimizer: [
-        new UglifyJsPlugin({
-            cache: true,
-            parallel: true,
-            sourceMap: false,
-            extractComments: false
-        }),
-        new CompressionPlugin({
-            test: /\.js$|\.css(\?.*)?$/i
-        }),
-        new OptimizeCSSAssetsPlugin({})
+      new UglifyJsPlugin({
+        cache: true,
+        parallel: true,
+        sourceMap: false,
+        extractComments: false
+      }),
+      new CompressionPlugin({
+        test: /\.js$|\.css(\?.*)?$/i
+      }),
+      new OptimizeCSSAssetsPlugin({})
     ]
   },
   output: {
