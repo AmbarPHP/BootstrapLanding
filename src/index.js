@@ -1,9 +1,11 @@
 import slider from './js/slider';
 import scroll from './js/scroll';
 import cycle from './js/cycle';
+import wow from './js/wow';
+
 import './sass/main.scss';
 import 'bootstrap';
-//import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 
 $(document).ready(function () {
@@ -45,6 +47,8 @@ $(document).ready(function () {
       scrollTop: '1000px'
     }, 1000);
   });
+  //inicaiando  plugin animaciones
+
 
 
 });
@@ -56,3 +60,4 @@ $(window).scroll(function () {
     $('.top-index').removeClass('top-bar-bg');
   }
 });
+new WOW().init();

@@ -4,9 +4,9 @@
 // @import url("https://fonts.googleapis.com/css?family=David+Libre:400, 500, 700");
 // @import url("https://fonts.googleapis.com/css?family=Maven+Pro:400, 500, 700, 900");
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
-@import url('https://fonts.googleapis.com/css?family=Exo+2:400,700');
-@import url('https://fonts.googleapis.com/css?family=Roboto:100,700');
+@import url('https://fonts.googleapis.com/css?family=Exo+2:400,700,800');
 
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,700');
 
 $amarillo: #ffc107;
 
@@ -90,7 +90,6 @@ div#slider img {
 	width: 110%;
 	position: relative;
 	z-index: -90;
-
 }
 
 div#next {
@@ -216,7 +215,8 @@ div#text-slider h1.wel span {
 	-moz-transition: 0.3s ease-in-out;
 }
 
-.top .logo {}
+.top .logo {
+}
 
 .top-bar-bg {
 	/* COLOR DE LA BARRA DE MENU cuando avanza */
@@ -327,7 +327,7 @@ a::after {
 	color: #ffffff;
 }
 
-.head>p {
+.head > p {
 	writing-mode: tb-rl;
 	float: right;
 	letter-spacing: 3px;
@@ -389,12 +389,10 @@ a::after {
 .story {
 	//paralax efect
 	padding: 5% 7%;
-	background: url("../assets/images/backgrounds/2.png");
+	background: url("../assets/images/one-bg.png");
 	background-size: cover;
 	background-attachment: fixed;
-	background-color: rgba(0, 0, 0, .7);
-
-
+	background-color: rgba(223, 42, 42, 0.7);
 }
 
 .head2 {
@@ -418,7 +416,7 @@ a::after {
 	color: #591054;
 }
 
-.head2>p {
+.head2 p {
 	writing-mode: tb-rl;
 	float: left;
 	letter-spacing: 3px;
@@ -605,7 +603,8 @@ a::after {
 	transition: 0.2s ease-in-out;
 }
 
-.view a i {}
+.view a i {
+}
 
 .view a:hover {
 	background-color: #591054;
@@ -742,7 +741,8 @@ a::after {
 	z-index: 1000;
 }
 
-.top-bar .logo {}
+.top-bar .logo {
+}
 
 .top-bar .logo a {
 	width: 70px;
@@ -877,15 +877,18 @@ iframe {
 	color: #fff;
 }
 
-.about-more-box .icon i {
-	display: block;
-	text-align: center;
-}
-
-.about-more-box .icon h3 {
-	font-size: 20px;
+.about-more-box h2 {
+	font-size: 4rem;
 	text-align: center;
 	color: #f3f3f3;
+	font-weight: 800;
+}
+.about-more-box h3 {
+	padding-top: 20px;
+	font-size: 2rem;
+	text-align: center;
+	color: #f3f3f3;
+	font-weight: 700;
 }
 
 .one-bg {
@@ -1228,7 +1231,7 @@ ul#lightgallery li img:hover {
 	padding-bottom: 15px;
 }
 
-.plan-one>p {
+.plan-one > p {
 	background-color: rgba(0, 0, 0, 0.7);
 	color: #ffffff;
 	text-align: center;
@@ -1278,9 +1281,11 @@ ul#lightgallery li img:hover {
 	padding: 7%;
 }
 
-.contact-section {}
+.contact-section {
+}
 
-.address {}
+.address {
+}
 
 .address h2 {
 	font-size: 40px;
@@ -1288,7 +1293,8 @@ ul#lightgallery li img:hover {
 	color: #591054;
 }
 
-.address ul {}
+.address ul {
+}
 
 .address ul li {
 	font-size: 22px;
@@ -1302,7 +1308,8 @@ ul#lightgallery li img:hover {
 	padding-right: 20px;
 }
 
-.form {}
+.form {
+}
 
 .form input {
 	display: block;
@@ -1340,7 +1347,8 @@ ul#lightgallery li img:hover {
 }
 
 /*project view*/
-.project-view {}
+.project-view {
+}
 
 .overlay {
 	position: fixed;
@@ -1409,7 +1417,7 @@ ul#lightgallery li img:hover {
 	color: rgba(0, 0, 0, 0.7);
 }
 
-.project-details>a {
+.project-details > a {
 	font-size: 17px;
 	background-color: #591054;
 	color: #ffffff;
@@ -1420,7 +1428,7 @@ ul#lightgallery li img:hover {
 	font-weight: 600;
 }
 
-.project-details>a:hover {
+.project-details > a:hover {
 	color: #ffffff;
 }
 
