@@ -502,7 +502,7 @@ iframe {
 	//background: url("../assets/images/infra1.png");
 	background-size: cover;
 	background-attachment: fixed;
-	background-color: rgba(242, 239, 243, 0.83);
+	background-color: $amarillo;
 }
 
 .head2 {
@@ -512,6 +512,7 @@ iframe {
 .head2 h3 {
 	color: #ffffff;
 	font-weight: 600;
+	font-size: 4rem !important;
 	text-transform: uppercase;
 	letter-spacing: 5px;
 	margin: 0;
@@ -521,9 +522,15 @@ iframe {
 	float: right;
 }
 
-.head2 h3 span {
-	background-color: #ffffff;
-	color: $primary-gris;
+.head2 h3 {
+	font-weight: 700 !important;
+
+	& span {
+		//background-color: $white;
+		color: $morado;
+		font-weight: 700 !important;
+
+	}
 }
 
 .head2 p {
@@ -539,7 +546,8 @@ iframe {
 	padding-bottom: 0;
 }
 
-.story-box p {
+.story-box p,
+i {
 	color: $primary-gris;
 	font-size: 17px;
 	text-align: justify;
@@ -550,13 +558,13 @@ iframe {
 }
 
 .written-by h5 {
-	color: #ffffff;
+	color: $primary-gris;
 	margin-bottom: 0;
 	padding-bottom: 0;
 }
 
 .written-by small {
-	color: rgba(255, 255, 255, 0.7);
+	color: $primary-gris;
 	padding-left: 10px;
 }
 

@@ -64,6 +64,7 @@
   height: 50%;
   padding: 0.5%;
   overflow: hidden;
+
   //color de la letra
 
   h2 {
@@ -73,6 +74,7 @@
       sans-serif;
     font-weight: 700;
     align-self: auto;
+    padding-left: 60px;
   }
 }
 
@@ -80,6 +82,7 @@
   background-image: url("../assets/images/proeba/13.png");
   -webkit-transform-origin: left top;
   transform-origin: left top;
+
 }
 
 .collage .collage-item:nth-child(2) .collage-item-image {
@@ -104,11 +107,11 @@
 
 //imagenes  al rededor de la imagen del centro
 .collage .collage-item:hover .collage-item-image {
-  -webkit-transform: scale(2.022);
-  transform: scale(2.022);
-  -webkit-transform: scale3d(2.022, 2.028, 1);
+  -webkit-transform: scale(1.022);
+  transform: scale(1.022);
+  -webkit-transform: scale3d(1.022, 1.028, 1);
   /* Safari */
-  transform: scale3d(2.022, 2.028, 1);
+  transform: scale3d(1.022, 1.028, 1);
   // /* Standard syntax */
   transition: z-index 0.4s 0.2s, -webkit-transform 0.4s 0.2s cubic-bezier(0.65, 0.05, 0.36, 1);
   transition: transform 0.4s 0.2s cubic-bezier(0.65, 0.05, 0.36, 1), z-index 0.4s 0.2s;
