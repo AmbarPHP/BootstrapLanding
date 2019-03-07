@@ -2,10 +2,11 @@ import slider from './js/slider';
 import scroll from './js/scroll';
 import cycle from './js/cycle';
 import wow from './js/wow';
+import all from './js/all';
+import colage from './js/collage'
 
 import './sass/main.scss';
 import 'bootstrap';
-
 
 
 $(document).ready(function () {

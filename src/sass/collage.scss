@@ -1,0 +1,205 @@
+.collage-container {
+  display: block;
+  flex-basis: auto;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  // max-width: 1000px;
+  margin: 0 auto;
+  padding: 0px;
+
+}
+
+.collage-container:before {
+  content: "";
+  display: block;
+  width: 100%;
+  padding-top: 66.666667%;
+
+}
+
+.collage {
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0%;
+  background: white;
+  box-shadow: 0 6px 80px -4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.collage:after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 50%;
+  bottom: -25px;
+  width: 60%;
+  height: 10px;
+  background: transparent;
+  border-radius: 50%;
+  box-shadow: 0 50px 36px rgba(0, 0, 0, 0.3);
+  -webkit-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+  overflow: hidden;
+}
+
+.collage .collage-item {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 50%;
+  position: relative;
+  width: 50%;
+  height: 50%;
+  padding: 0.5%;
+  overflow: hidden;
+  //color de la letra
+
+  h2 {
+    color: $white;
+    padding-top: 30%;
+    font-family: 'Exo 2',
+      sans-serif;
+    font-weight: 700;
+    align-self: auto;
+  }
+}
+
+.collage .collage-item:first-child .collage-item-image {
+  background-image: url("../assets/images/proeba/13.png");
+  -webkit-transform-origin: left top;
+  transform-origin: left top;
+}
+
+.collage .collage-item:nth-child(2) .collage-item-image {
+  background-image: url("../assets/images/proeba/11.png");
+  -webkit-transform-origin: right top;
+  transform-origin: right top;
+}
+
+.collage .collage-item:nth-child(3) .collage-item-image {
+  background-image: url("../assets/images/proeba/16.png");
+  -webkit-transform-origin: left bottom;
+  transform-origin: left bottom;
+}
+
+.collage .collage-item:nth-child(4) .collage-item-image {
+  background-image: url("../assets/images/proeba/17.png");
+  -webkit-transform-origin: right bottom;
+  transform-origin: right bottom;
+
+
+}
+
+//imagenes  al rededor de la imagen del centro
+.collage .collage-item:hover .collage-item-image {
+  -webkit-transform: scale(2.022);
+  transform: scale(2.022);
+  -webkit-transform: scale3d(2.022, 2.028, 1);
+  /* Safari */
+  transform: scale3d(2.022, 2.028, 1);
+  // /* Standard syntax */
+  transition: z-index 0.4s 0.2s, -webkit-transform 0.4s 0.2s cubic-bezier(0.65, 0.05, 0.36, 1);
+  transition: transform 0.4s 0.2s cubic-bezier(0.65, 0.05, 0.36, 1), z-index 0.4s 0.2s;
+  transition: transform 0.4s 0.2s cubic-bezier(0.65, 0.05, 0.36, 1), z-index 0.4s 0.2s, -webkit-transform 0.4s 0.2s cubic-bezier(0.65, 0.05, 0.36, 1);
+  z-index: 999;
+
+}
+
+.collage .collage-item:hover~.collage-hover-overlay {
+  visibility: visible;
+  transition: visibility 0.4s 0.2s, opacity 0.4s 0.2s;
+  opacity: 0.5;
+}
+
+//cambien el z-index por 10 para que permanescan todas las imagenes antes tenia 1 y desaparecian las demas
+.collage .collage-item .collage-item-image {
+  flex-basis: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  transition: z-index 0.4s, -webkit-transform 0.5s;
+  transition: transform 0.5s, z-index 0.4s;
+  transition: transform 0.5s, z-index 0.4s, -webkit-transform 0.5s;
+  will-change: transform, opacity, z-index;
+  z-index: 10;
+  overflow: hidden;
+}
+
+//imagen central 
+.collage .collage-hero {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  transform: translate(-50%, -50%);
+  transform: translate3d(-50%, -50%, 0);
+  width: 33.333333%;
+  height: 50%;
+  padding: 1%;
+  background: white;
+  border-radius: 100%;
+  transition: z-index 0.4s, -webkit-transform 0.5s;
+  transition: transform 0.5s, z-index 0.4s;
+  transition: transform 0.5s, z-index 0.4s, -webkit-transform 0.5s;
+  z-index: 10;
+  overflow: hidden;
+}
+
+.collage .collage-hero:hover .collage-hero-image {
+  border-radius: 0%;
+  -webkit-transform: scale(2.065);
+  transform: scale(2.065);
+  transition: border-radius 0.6s 0.2s, z-index 0.4s 0.2s, -webkit-transform 0.4s 0.2s;
+  transition: transform 0.4s 0.2s, border-radius 0.6s 0.2s, z-index 0.4s 0.2s;
+  transition: transform 0.4s 0.2s, border-radius 0.6s 0.2s, z-index 0.4s 0.2s, -webkit-transform 0.4s 0.2s;
+  z-index: 999;
+  overflow: hidden;
+}
+
+.collage .collage-hero:hover~.collage-hover-overlay {
+  visibility: visible;
+  transition: visibility 0.4s 0.2s, opacity 0.4s 0.2s;
+  opacity: 1;
+
+}
+
+.collage .collage-hero .collage-hero-image {
+  width: 100%;
+  height: 100%;
+  background-image: url("../assets/images/proeba/10.png");
+  background-size: cover;
+  background-position: center center;
+  border-radius: 100%;
+  transition: border-radius 0.7s 0.3s, z-index 0.4s, -webkit-transform 0.5s;
+  transition: transform 0.5s, border-radius 0.7s 0.3s, z-index 0.4s;
+  transition: transform 0.5s, border-radius 0.7s 0.3s, z-index 0.4s, -webkit-transform 0.5s;
+  will-change: transform, opacity, border-radius, z-index;
+  z-index: 10;
+}
+
+.collage .collage-hover-overlay {
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: white;
+  will-change: visibility, opacity;
+  opacity: 0;
+  transition: visibility 0.5s, opacity 0.5s;
+  z-index: 5;
+}
