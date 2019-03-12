@@ -5,6 +5,7 @@
 
 $amarillo: #ffc107;
 $morado: #591054;
+$verde:#45ab4e;
 $white: #fff;
 $primary-gris: #222;
 
@@ -331,7 +332,7 @@ div#text-slider div {
 	padding-right: 7%;
 	padding-bottom: 17%;
 	background-color: $amarillo;
-	color: #222;
+	color: $white;
 }
 
 .solutions-got-box i {
@@ -384,26 +385,46 @@ div#text-slider div {
 /***************************************************************************/
 /************************5 . VIDEO*******************************************/
 /*************************************************************************/
-.about {
-	padding: 15% 7%;
+
+
+
+
+.video {
+	padding: 5% 7%;
 	background-color: $white;
+
 }
 
-.about h3 {
+.video h2 {
+	padding-top: 0%;
+	padding-bottom: 3%;
+	font-size: 50px;
+	font-weight: 800;
+	text-align: center;
+	color: $verde;
+
+	span {
+		padding: 0%;
+	}
+}
+
+
+.video h3 {
 	padding-top: 7%;
 	padding-bottom: 3%;
 	font-size: 50px;
 	font-weight: 800;
 	text-align: center;
-	color: $primary-gris;
+	color: $verde;
 }
 
-.about p {
+.video p {
 	padding: 3%;
-	color: $primary-gris;
+	color: $white;
+	background: linear-gradient(rgb(46, 6, 73), rgba(65, 6, 62, 0.836));
 }
 
-// .about>p {
+// .video>p {
 // 	writing-mode: tb-rl;
 // 	float: right;
 // 	letter-spacing: 3px;
@@ -411,7 +432,7 @@ div#text-slider div {
 .btn {
 	margin-left: 3%;
 	padding: 3%;
-	color: $primary-gris !important;
+	color: $verde !important;
 	background-color: #f3f3f3 !important;
 	border-color: #f3f3f3 !important;
 }
@@ -505,31 +526,17 @@ iframe {
 	background-color: $amarillo;
 }
 
-.head2 {
-	border-left: solid 4px #ffffff !important;
-}
 
-.head2 h3 {
-	color: #ffffff;
-	font-weight: 600;
-	font-size: 4rem !important;
-	text-transform: uppercase;
-	letter-spacing: 5px;
-	margin: 0;
-	padding: 0;
-	font-size: 5em;
-	width: 70%;
-	float: right;
-}
 
-.head2 h3 {
-	font-weight: 700 !important;
+.story h2 {
+	padding-top: 7%;
+	padding-bottom: 3%;
+	font-size: 50px;
+	font-weight: 800;
+	text-align: center;
 
-	& span {
-		//background-color: $white;
-		color: $morado;
-		font-weight: 700 !important;
-
+	span {
+		padding: 0%;
 	}
 }
 
@@ -643,8 +650,25 @@ i {
 	padding: 0 !important;
 }
 
+/***************************************************************************/
+/************************5 .PROCESOS DE TRATAMIENTO *******************************************/
+/*************************************************************************/
+
 .about-more {
 	background-color: #f3f3f3;
+
+	.head h3 {
+		color: $morado;
+		font-weight: 900;
+		font-size: 3.5rem !important;
+		text-transform: uppercase;
+		letter-spacing: 5px;
+		margin: 0;
+		padding: 0;
+		font-size: 5em;
+		width: 100%;
+		float: right;
+	}
 }
 
 .about-more-more {
