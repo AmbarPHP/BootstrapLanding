@@ -1,13 +1,16 @@
 
 <h2 align="center">Basado en webpack-sass-bootstrap-boilerplate</h2>
 ### Quick Start
-<p align="center">
+
+  
+  <p align="center">
   <em>
-npm install
-npm install node-sass
-npm start
+    
+ </br>npm install
+ </br>npm install node-sass
+</br>npm start
   </em>
-  </p>
+</p>
 
 <h3> Descripcion del Boiler plate</h3>
 <p align="center">
