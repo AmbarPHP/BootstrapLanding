@@ -1,6 +1,11 @@
 
 <h2 align="center">Basado en webpack-sass-bootstrap-boilerplate</h2>
+### Quick Start
+npm install
+npm install node-sass
+npm start
 
+<h3> Descripcion del Boiler plate</h3>
 <p align="center">
   <a href="https://github.com/shaminmeerankutty/webpack-sass-bootstrap-boilerplate/blob/master/LICENSE.md">
     <img alt="License" src="https://img.shields.io/github/license/mashape/apistatus.svg"></a>
