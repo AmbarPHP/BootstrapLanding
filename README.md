@@ -2,15 +2,32 @@
 <h2 align="center">Basado en webpack-sass-bootstrap-boilerplate</h2>
 ### Quick Start
 
-  
-  <p align="center">
-  <em>
+  Clone the repo:
+
+    git clone https://github.com/AmbarPHP/BootstrapLandingPage
+
+Navigate to the project folder:
+
+    cd BootstrapLandingPage
+
+Install all packages and dependencies required for this project:
+
+    npm install
     
- </br>npm install
- </br>npm install node-sass
-</br>npm start
-  </em>
-</p>
+Install dependencies 
+ 
+    npm install node-sass
+  
+Start the development environment (then, navigate to http://localhost:8080):
+
+    npm start
+ 
+Then, open a browser and navigate to: http://localhost:8080/ 
+
+
+
+ 
+
 
 <h3> Descripcion del Boiler plate</h3>
 <p align="center">
